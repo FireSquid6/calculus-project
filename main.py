@@ -24,6 +24,7 @@ class GraphFunctions(Scene):
         f_graph = ax.plot(f, color=BLUE)
         g_graph = ax.plot(g, color=RED)
 
-        self.add(ax, f_graph, g_graph)
+        self.add(ax)
+        self.play(Create(f_graph), Create(g_graph))
 
 
