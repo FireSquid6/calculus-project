@@ -25,6 +25,9 @@ class GraphFunctions(Scene):
         g_graph = ax.plot(g, color=RED)
 
         self.add(ax)
+
         self.play(Create(f_graph), Create(g_graph))
+
+        self.wait(5)
 
 
